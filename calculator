@@ -1,0 +1,26 @@
+#a code to build a calculator
+def add(num1, num2):
+    return (num1 + num2)
+def subtract(num1, num2):
+    return(num1 - num2)
+def divide(num1, num2):
+    return(num1 / num2)
+def multiply(num1, num2):
+    return(num1 * num2)
+    '''this code defines four fuctions which includes addition,subtraction,
+    multiplication and division'''
+num1 = float(input("enter the first number "))
+num2 =float(input("enter the second number "))
+'''float is used to get correct answer because of numbers in float will give
+incorrect answer in int form'''
+operation = input("enter the operation(+,-,/,*):")
+if operation =="+":
+   print(add(num1, num2))
+elif operation == "-":
+   print(subtract(num1, num2))
+elif operation =="/":
+   print(divide(num1, num2))
+elif operation=="*":
+   print(multiply(num1, num2))
+else:
+   print("invalid operation")
